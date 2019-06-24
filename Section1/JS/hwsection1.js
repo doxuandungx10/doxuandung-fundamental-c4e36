@@ -5,7 +5,7 @@
 // // - Ví dụ tên sai: 5high, let, *Abc 
 // // BT2:
 // // let x = Number(prompt("Enter Radius"))
-// // console.log("Area = " + x * 3.14)
+// // console.log("Area = " + x * x * 3.14)
 // // BT3:
 // // let y = Number(prompt("Enter the temperature in Celsius"))
 // // console.log( y + "(C) = " + (1.8*y+32) + "(F)" )
