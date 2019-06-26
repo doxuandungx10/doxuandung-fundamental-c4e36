@@ -20,25 +20,25 @@
 
 // console.log(`nghiem kep la ${x}`) // backticks
 
-const x = prompt("Nhap x");
-let isPrime = true;
-if ( x<2 ){
-    console.log("x khong phai la so nguyen to");
+// const x = prompt("Nhap x");
+// let isPrime = true;
+// if ( x<2 ){
+//     isPrime = false;
 
-}
-else {
-    for ( let i=2 ; i < x  ; i++){
-        if ( x % i === 0){
-            isPrime = false
-            // console.log("x khong phai la so nguyen to");
-            break;
-          }
+// }
+// else {
+//     for ( let i=2 ; i < x  ; i++){
+//         if ( x % i === 0){
+//             isPrime = false
+//             // console.log("x khong phai la so nguyen to");
+//             break;
+//           }
         
-    }
-}
-if (isPrime) {
-    console.log("Prime Number");
+//     }
+// }
+// if (isPrime) {
+//     console.log("Prime Number");
 
-} else {
-    console.log("Not Prime Number");
-}
+// } else {
+//     console.log("Not Prime Number");
+// }
