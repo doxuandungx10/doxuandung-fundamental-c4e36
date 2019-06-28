@@ -98,24 +98,24 @@
 // Serious Exercise
 // BT1:
 
-// let height = Number(prompt("Height???"));
-// let weight = Number(prompt("Weight???"));
-// let BMI = weight/(height*height);
-// if ( BMI<16 ){
-//     console.log("Severely underweight");
-// }
-// else if ( 16<=BMI<=18.5 ){
-//     console.log("Underweight");
-// }
-// else if ( 18.5<BMI<25 ){
-//     console.log("Normal");
-// }
-// else if ( 25<=BMI<30 ){
-//     console.log("Overweight");
-// }
-// else {
-//     console.log("Obese");
-// }
+let height = Number(prompt("Height???"));
+let weight = Number(prompt("Weight???"));
+let BMI = weight/(height*height);
+if ( BMI<16 ){
+    console.log("Severely underweight");
+}
+else if ( 16<=BMI && BMI<=18.5 ){
+    console.log("Underweight");
+}
+else if ( 18.5<BMI && BMI<25 ){
+    console.log("Normal");
+}
+else if ( 25<=BMI && BMI<30 ){
+    console.log("Overweight");
+}
+else {
+    console.log("Obese");
+}
 
 
 // BT2:
