@@ -17,6 +17,7 @@
 
 // 2. CREATE
 // menu.forEach()
+// menu.push()
 
 
 // 3. DELETE
@@ -37,3 +38,6 @@ const menu = ["Com","Chao","Rau","Thit","Ca"];
 
 menu[1] = "Pho";
 console.log(menu)
+
+
+5
