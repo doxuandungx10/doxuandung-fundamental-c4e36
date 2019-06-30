@@ -26,5 +26,3 @@
 // for(;;){
 //     console.log("hihi")
 // }
-
-  

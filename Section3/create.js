@@ -39,4 +39,3 @@ else if (answer === "y") {
         console.log(menu)
     }
 }
-

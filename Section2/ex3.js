@@ -1,4 +1,3 @@
-
 // let y = Number(prompt("Nhap y"));
 // console.log(y);
 // for (;;) {
@@ -50,11 +49,3 @@
 // if ( c = x ){
 //     console.log("C");
 // }
-
-
-
-
-
-
-
-
