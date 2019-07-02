@@ -21,6 +21,7 @@ stock: ${stock[food]} `);
 let total = 0;
 value.forEach((food, index) => {
     x = price[food] * stock[food];
+    console.log(`Value of ${food} = ${x}`);
     total += x;
 })
 console.log(`Total = ${total}`)
