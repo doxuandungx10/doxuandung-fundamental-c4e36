@@ -2,7 +2,7 @@
 myflock = [5, 7, 300, 90, 24, 50, 75];
 console.log(`Hello, my name is Dung and these are my ship sizes [${myflock}]`);
 
-for (j = 1; j < 5; j++) {
+for (j = 1; j < 4; j++) {
     console.log(`MONTH ${j}`);
     for (i = 0; i < 7; i++) {
         myflock[i] = myflock[i] + 50;
@@ -21,3 +21,9 @@ for (j = 1; j < 5; j++) {
     console.log(`After shearing, here is my flock [${myflock}]`);
     
 }
+let sum = 0 ; 
+for ( i=0 ; i < myflock.length ; i++ ){
+    sum += myflock[i];
+}
+
+console.log(`My flock has size in total ${sum}`)
