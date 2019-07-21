@@ -1,0 +1,79 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.keyboard {
+    display: flex;
+    background: rgb(9, 255, 0);
+    height: 50%;
+    width: 50%;
+}
+
+.screen {
+    background: rgb(0, 255, 242);
+    height: 25%;
+    width: 50%;
+}
+
+.op {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    height: 100%;
+    width: 38%
+}
+
+.number {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    height: 100%;
+    width: 62%
+}
+
+button {
+    color: rgb(168, 43, 226);
+    height: 23%;
+    width: 31%;
+}
+
+.op {
+    order: 1;
+}
+
+.number button {
+    background: yellow;
+}
+
+.op button {
+    color: rgba(192, 233, 13, 0.945);
+    background: rgb(0, 119, 255);
+    height: 32%;
+    width: 50%;
+}
+
+.operator {
+    flex-grow: 1;
+}
+
+#del {
+    color: beige;
+    background: rgb(255, 0, 221);
+}
+
+#ac {
+    color: beige;
+    background: rgb(255, 0, 221);
+}
