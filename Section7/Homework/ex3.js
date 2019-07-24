@@ -10,19 +10,21 @@ let update = document.getElementById(`update`);
 
 
 update.addEventListener(`click`, () => {
-    for (i = 1; i < 4; i++) {
-        if (row.value == i) {
-            for (j = 1; j < 3; j++) {
-                if (column.value == j) {
-                    table.rows[i - 1].cells[j - 1].innerText = content.value
-                }
-            }
+    // for (i = 1; i < 4; i++) {
+    //     if (row.value == i) {
+    //         for (j = 1; j < 3; j++) {
+    //             if (column.value == j) {
+    //                 table.rows[i - 1].cells[j - 1].innerText = content.value
+    //             }
+    //         }
+
+    //     }
+    // }
 
 
-
-
-        }
-    }
+    let rowUpdate = table.rows[row.value - 1];
+    let elementUpdate = rowUpdate.children[column.value - 1];
+    elementUpdate.innerText = content.value
 
 })
 
