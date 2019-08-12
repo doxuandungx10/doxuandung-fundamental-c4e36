@@ -52,7 +52,7 @@ const viewUsers = () => {
     for (let i = 0; i < context.users.length; i++) {
         let user = document.getElementById(`user-${i}`);
         let userDetail = document.getElementById(`user-detail`);
-        user.addEventListener('click', (event) => {
+        user.addEventListener('mousemove', (event) => {
             console.log(event)
             userDetail.innerHTML = '';
             userDetail.innerHTML += user.innerHTML;
