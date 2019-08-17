@@ -1,0 +1,40 @@
+#canvas {
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* #alert {
+    position: absolute;
+    width: 200px;
+    background-color: red;
+    height: 200px;
+} */
+
+#screen {
+    position: relative;
+    display: flex;
+    justify-content: center
+}
+
+#checkbox {
+    background-color: rgb(0, 253, 106);
+    z-index: 9;
+    top: 147px;
+    left: 380px;
+    position: absolute;
+    display: block;
+    width: 760px;
+    height: 605px;
+}
+
+#startgame {
+    margin-top: 140px;
+    margin-left: 205px;
+    width: 350px;
+    height: 200px;
+}
+
+#startgame:hover {
+    cursor: pointer;
+}

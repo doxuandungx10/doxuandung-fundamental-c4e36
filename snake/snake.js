@@ -14,6 +14,8 @@ ground.src = "ground2.png";
 const foodImg = new Image();
 foodImg.src = "food2.png";
 
+let body = document.getElementById(`body`);
+let screen = document.getElementById(`screen`);
 
 let dead = new Audio();
 let eat = new Audio();
@@ -43,7 +45,6 @@ function collision(head, array) {
 // left.src = "audio/left.mp3";
 // down.src = "audio/down.mp3";
 
-// create the snake
 
 // let snake = [];
 
@@ -177,6 +178,14 @@ function direction2(event) {
 }
 
 function draw2() {
+    let checkBox = document.getElementById("checkbox")
+        // checkBox.innerHTML += '<img id="startgame" src="https://i.gifer.com/origin/fe/fe9eebde5e19b66192281164142359e4_w200.gif" alt="">'
+    let startGame = document.getElementById(`startgame`)
+    document.createElement('div')
+    startGame.addEventListener(`click`, () => {
+        checkBox.style.display = "none";
+        p == "LEFT";
+    })
 
     ctx.drawImage(ground, 0, 0);
 
@@ -219,10 +228,29 @@ function draw2() {
     if (snake2X < box || snake2X > 39 * box - 1 || snake2Y < 7 * box || snake2Y > 36 * box || collision(newHead2, snake2)) {
         clearInterval(game2);
         dead.play();
+
+        function drawSquare(x, y) {
+            ctx.fillStyle = "rgb(0, 253, 106)";
+            ctx.fillRect(box * x, box * y, box, box);
+        }
+
+        function drawScreen() {
+            for (r = 1; r < 39; r++) {
+                for (c = 7; c < 38; c++) {
+                    drawSquare(r, c);
+                }
+            }
+        }
+        drawScreen();
         Over();
         Over2();
-        snake2 = [];
+        setTimeout(() => {
+            checkBox.style.display = "block"
+        }, 2000);
+
+        // setTimeout(function() { screen.innerHTML += `<div id="alert">hihi</div>` }, 1000);
         // alert("Game Over")
+
     }
 
     snake2.unshift(newHead2);
@@ -234,4 +262,4 @@ function draw2() {
 
 
 
-let game2 = setInterval(draw2, 100);
+let game2 = setInterval(draw2, 70);

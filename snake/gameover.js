@@ -1,12 +1,13 @@
 function Over() {
     function gameOver(x, y) {
-        ctx.fillStyle = "Blue";
+        ctx.fillStyle = "Red";
         ctx.fillRect(box * x, box * y, box, box);
-        ctx.strokeStyle = "white";
+        ctx.strokeStyle = "Red";
         ctx.strokeRect(box * x, box * y, box, box);
     }
     setInterval(gameOver, 1000)
-    gameOver(12, 15);
+
+
     gameOver(11, 14);
     gameOver(10, 14);
     gameOver(9, 14);
@@ -84,9 +85,9 @@ function Over() {
 
 function Over2() {
     function gameOver(x, y) {
-        ctx.fillStyle = "Blue";
+        ctx.fillStyle = "Red";
         ctx.fillRect(box * x, box * y, box, box);
-        ctx.strokeStyle = "white";
+        ctx.strokeStyle = "Red";
         ctx.strokeRect(box * x, box * y, box, box);
         // setInterval(gameOver, 10000)
     }
